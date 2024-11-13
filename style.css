@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-primaria: #0e289c;
+    --cor-primaria-off: rgb(14 40 156 / 25%);
+    --cor-secundaria-off: rgba(255, 255, 255, 0.25);
+    --cor-secundaria: #ffffff;
+
+    --cor-primaria-hover: #899eff;
+    --cor-secundaria-hover: #ebe1ff;
+}
+
+body {
+    background: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: var(--cor-primaria);
+    padding: 10px;
+    font-size: 35px;
+    font-family: 'Sour Gummy';
+} 
+
+.carrossel {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.carrossel .btns {
+    margin: 20px 40px;
+}
+
+.carrossel .btns button {
+    border-radius: 100%;
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    border: none;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin: 0px 5px;
+    transition: all .5s;
+}
+
+.carrossel .btns button:hover {
+    transform: scale(1.1) translateY(-5px);
+    background: var(--cor-secundaria-hover);
+    color: var(--cor-primaria-hover);
+}
+
+.owl-carousel iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 20px 5px 20px 5px;
+    box-sizing: border-box;
+    margin: 10px;
+    background: linear-gradient(100deg, var(--cor-secundaria-off), transparent);
+    filter: drop-shadow(0px 0px 10px var(--cor-secundaria-off));
+    margin: 30px 0px;
+}
+
+.owl-carousel {
+    overflow-x: hidden;
+    overflow-y: initial !important;
+}
+
+.top-video {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    background: var(--cor-primaria-off);
+    margin-top: 20px;
+}
+
+.top-video div {
+    width: 100%;
+}
+
+.top-video h1 {
+    font-size: 50px;
+    font-family: 'Anton SC';
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.top-video p {
+    font-size: 20px;
+    font-family: 'Inter';
+    color: var(--cor-secundaria);
+}
+
+.top-video p i {
+    font-weight: lighter;
+}
+
+.top-video iframe {
+    width: 90%;
+    height: 800px;
+    border-radius: 40px 10px 40px 10px;
+    margin-top: 40px;
+}
